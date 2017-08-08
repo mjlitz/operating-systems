@@ -1,0 +1,10 @@
+test1	79 non-special characters followed by %, then EOF	Edge case with % processing
+test2	79 non-special characters followed by %%		Edge case with % processing
+test3	78 non-special characters followed by %\n		Edge caes with % processing
+test4	81 %'s followed by 39 non-special characters		Program pairs %'s correctly
+test5	81 characters, including a single %%			Basic program function of %%->*
+test6	80 characters, including a single \n			Basic program function of \n->' '
+test7	Outputs 160 characters, including seperated *'s and ' '	Basic program function of splitting lines
+test8	80 printable and nonprintable characters (no % or \n)	Can program deal with non-printables
+test9	Empty file						Empty file edge case
+test10	Large file (~5mb)					Large file edge case
